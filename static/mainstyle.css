@@ -11,6 +11,16 @@ h1{
 
 }
 
+button{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+}
+
 /* ---- NAVIGATOR ---- */
 #navbar {
     background-color: rgb(0, 0, 0);
@@ -78,11 +88,14 @@ h1{
 
 }
 
-/* GENERAL SUMMARY (Education, Hobbies) */
+/* SOFTWARE EXPERIENCE */
 .software{
-    background-color: rgb(60, 60, 60);
-    padding: 20px;
+    background-color: rgb(126, 126, 126);
+    color: black;
+    padding: 30px;
     text-align: center;
+    border-radius: 30px;
+    margin: 20px;
 }
 
 .grid{
@@ -92,31 +105,30 @@ h1{
 .row{
     display: flex;
 }
+
 .row div{
     text-align: center;
     /* border: 2px black solid; */
 }
-.row div:hover{
+
+/* .row div:hover{
     background-color: black;
     color: white;
-}
+} */
 
 .col{
     width: 20%;
-    /* height: 100px; */
     text-align: center;
     vertical-align: middle;
     font-size: 12px;
-    /* padding-bottom: 10px; */
-    /* padding-top: 30px; */
     padding: 10px;
     padding-top: 20px;
     height: 150px;
     margin: 5px;
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(187, 187, 187);
     color: black;
+    border-radius: 10px;
 }
-
 
 .col h2{
     line-height: 0em;
@@ -128,8 +140,109 @@ h1{
     height: 70px;
 }
 
+.col:hover{
+    background-color: black;
+    color: white;
+}
+
+.showProjects {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.projectBox{
+    display: flex;
+}
+
+.projectBox img{
+    width: 100%;
+}
+
+.description{
+    position: relative;
+    text-align: center;
+    width: 33%;
+    margin-top: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* color: rgb(206, 206, 206); */
+}
+
+.description img{
+    opacity:20%;
+}
+
+.description img:hover{
+    opacity:40%;
+}
+
+.description h2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#pyGame, #dataAnalysis, #sql{
+    /* width: 50%; */
+    margin: 0 auto;
+    margin-top: 30px;
+    /* padding-left: 18%;
+    padding-right: 18%; */
+    width: 30%;
+}
+
+
+
+/* #MS{
+    text-align: center;
+} */
+.msSection {
+    /* display: flex; */
+    /* border: 2px black solid; */
+    width: 8%; 
+    display: inline-block; 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.msSection img{
+    /* position: relative; */
+    /* display: inline; */
+    text-align: center;
+    /* width: 8%; */
+    
+    width: 100%;
+    margin-top: 30px;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+}
+#microsoft{
+    margin: 0 auto;
+    margin-top: 30px;
+    width:100%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+
 
 .contact{
     /* background-color: rgb(65, 65, 65); */
     padding: 10px;
+}
+
+
+.blackColor {
+    background-color:black;
+}
+
+/* .forum_hover { background-color: white; } */
+
+.blackHover{
+    background-color: black;
+    color: white;
 }
