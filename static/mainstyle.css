@@ -1,14 +1,16 @@
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: #f7f9fd;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:normal;
-    color: rgb(233, 233, 233);
+    margin:0px;
+    /* width: 100%; */
+    /* color: rgb(233, 233, 233); */
 }
 
 h1{
     text-align: center;
-
+    text-shadow: 0px 0px 8px #8f8f8f;
 }
 
 button{
@@ -21,46 +23,55 @@ button{
     border-radius: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* ---- NAVIGATOR ---- */
-#navbar {
-    background-color: rgb(0, 0, 0);
+nav{
+    background-color: white;
+    box-shadow: 0px 0px 20px -15px black;
     position: sticky;
     top: 0em;
     overflow: hidden;
-    /* color:  rgb(233, 233, 233); */
+    opacity: 90%;
+    backdrop-filter: blur(6px);
 }
-#navbar ul{
-    list-style: none;
-}
-#navbar li{
+nav li{
+    color: black;
     display: inline;
-    /* color:  rgb(233, 233, 233); */
+    padding: 10px;
+    text-align: center;
 }
 
+
+nav ul{
+    list-style: none;
+}
+
+
 #navbar li:first-child{
-    /* color: rgb(51, 51, 51); */
     font-size: 20px;
 }
 
-#navbar li:nth-child(2){
-    margin-left: 30px;
+
+
+#navbar li:nth-child(n+2){
+    /* margin-left: 10px; */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: right;
+    width: 5%;
 }
 
-.page{
-    margin-right: auto;
+#navbar li:nth-child(n+2):hover{
+    background-color: #f3f3f3;
+    color: black;
+    border-radius: 10px;
 }
 
-#navbar a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-#navbar a:hover{
-    background-color: rgb(51, 51, 51);
-    color: white;
-    
-}
+
 
 
 /* ABOUT ME */
@@ -74,12 +85,11 @@ button{
 .aboutMe{
     width: 60%;
 }
-.header{
+.section1{
     display: flex;
-    margin-right: 5%;
-    margin-left: 5%;
 }
-.header div{
+
+.section1 div{
     padding-right: 5%;
     padding-left: 5%;
     text-align: center;
@@ -90,12 +100,12 @@ button{
 
 /* SOFTWARE EXPERIENCE */
 .software{
-    background-color: rgb(126, 126, 126);
+    /* background-color: rgb(126, 126, 126); */
     color: black;
     padding: 30px;
     text-align: center;
     border-radius: 30px;
-    margin: 20px;
+    margin: 5%;
 }
 
 .grid{
@@ -108,13 +118,7 @@ button{
 
 .row div{
     text-align: center;
-    /* border: 2px black solid; */
 }
-
-/* .row div:hover{
-    background-color: black;
-    color: white;
-} */
 
 .col{
     width: 20%;
@@ -125,7 +129,8 @@ button{
     padding-top: 20px;
     height: 150px;
     margin: 5px;
-    background-color: rgb(187, 187, 187);
+    background-color: white;
+    box-shadow: 0px 0px 20px -15px black;
     color: black;
     border-radius: 10px;
 }
@@ -141,9 +146,9 @@ button{
 }
 
 .col:hover{
-    background-color: black;
-    color: white;
+    box-shadow: 0px 0px 25px -15px black;
 }
+
 
 .showProjects {
     padding-left: 5%;
@@ -166,15 +171,19 @@ button{
     margin-top: 30px;
     padding-left: 2%;
     padding-right: 2%;
-    /* color: rgb(206, 206, 206); */
+}
+.description h2{
+    z-index: -1;
 }
 
 .description img{
     opacity:20%;
+    box-shadow: 0px 0px 20px -10px black;
 }
 
 .description img:hover{
     opacity:40%;
+    box-shadow: 0px 0px 20px -10px black;
 }
 
 .description h2{
@@ -185,40 +194,32 @@ button{
 }
 
 
-#pyGame, #dataAnalysis, #sql{
-    /* width: 50%; */
+#pyGame, #dataAnalysis, #sql, #WP{
     margin: 0 auto;
     margin-top: 30px;
-    /* padding-left: 18%;
-    padding-right: 18%; */
     width: 30%;
 }
 
 
-
-/* #MS{
-    text-align: center;
-} */
-.msSection {
-    /* display: flex; */
-    /* border: 2px black solid; */
+.msSection{
     width: 8%; 
     display: inline-block; 
     margin-left: 2%;
     margin-right: 2%;
+    align-self: flex-end;
 }
 
 .msSection img{
-    /* position: relative; */
-    /* display: inline; */
     text-align: center;
-    /* width: 8%; */
-    
     width: 100%;
     margin-top: 30px;
-    /* padding-left: 2%;
-    padding-right: 2%; */
+    opacity: 40%;
 }
+
+.msSection img:hover{
+    opacity: 100%;
+}
+
 #microsoft{
     margin: 0 auto;
     margin-top: 30px;
@@ -240,7 +241,7 @@ button{
     color: rgb(138, 138, 138);
 }
 .timeline p{
-    color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
 }
 .timeline div{
     /* border: 2px white solid; */
@@ -252,7 +253,7 @@ button{
 .date {
     width: 25%;
     text-align: right;
-    border-right: 2px white solid;
+    border-right: 2px rgb(128, 128, 128) solid;
 }
 .experience{
     width: 85%;
@@ -261,16 +262,14 @@ button{
 .experience ul{
     line-height: 1.5em;
 }
-.education{
-    margin-top: 50px;
-    line-height: 1em;
+.educationInfo{
+    display: flex;
+    margin-bottom: 5%;
 }
-.content{
-    padding-left: 40px;
-}
-.education ul{
-    line-height: 1.5em;
-    color: rgb(138, 138, 138);
+
+#uoftLogo{
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 
@@ -278,19 +277,6 @@ button{
 
 /* Footer */
 
-.contact{
-    /* background-color: rgb(65, 65, 65); */
+/* .footer{
     padding: 10px;
-}
-
-
-.blackColor {
-    background-color:black;
-}
-
-/* .forum_hover { background-color: white; } */
-
-.blackHover{
-    background-color: black;
-    color: white;
-}
+} */
