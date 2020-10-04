@@ -299,6 +299,9 @@ footer{
 footer div{
     width: 20%;
 }
+footer a{
+    color: white;
+}
 .right {
     text-align: left;
     line-height: 2;
