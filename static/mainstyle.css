@@ -4,23 +4,132 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight:normal;
     margin:0px;
-    /* width: 100%; */
-    /* color: rgb(233, 233, 233); */
+
+    /* position: absolute;
+    width: 100%;
+    height: 100%; */
+    /* overflow: hidden; */
+    
 }
 
+/* BACKGROUND */
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgb(224, 224, 224);
+    z-index: -1;
+}
+
+.box div:nth-child(1){
+    top: 35%;
+    left: 73%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top: 30%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(4){
+    top: 98%;
+    left: 78%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(5){
+    top: 65%;
+    left: 12%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(6){
+    top: 72%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(7){
+    top: 40%;
+    left: 76%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(8){
+    top: 78%;
+    left: 90%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(9){
+    top: 87%;
+    left: 32%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(10){
+    top: 54%;
+    left: 65%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(11){
+    top: 20%;
+    left: 90%;
+    animation: animate 6s linear infinite;
+
+}
+
+.box div:nth-child(12){
+    top: 30%;
+    left: 65%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(13){
+    top: 40%;
+    left: 90%%;
+    animation: animate 9s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-300px) rotate(200deg);
+        opacity: 0;
+    }
+}
+
+/* End of BACKGROUND */
+
+/* GENERAL */
 h1{
     text-align: center;
     text-shadow: 0px 0px 8px #8f8f8f;
 }
 
 button{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: 20px;
     padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 3%;
+    padding-left: 3%;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px black;
+    border-style: none;
 }
 
 a{
@@ -37,6 +146,7 @@ nav{
     overflow: hidden;
     opacity: 90%;
     backdrop-filter: blur(6px);
+    z-index: 1000;
 }
 nav li{
     color: black;
@@ -76,15 +186,48 @@ nav ul{
 
 /* ABOUT ME */
 .intro{
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 3%;
 }
-.image{
-    width: 40%;
+.portfolio{
+    width: 10%;
+    height: 250px;
+    margin-left: 20%;
+    /* margin-right: 20%; */
+    background-image: url("/images/avatar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border-style: solid; */
+    
 }
+
+
+.portfolio:hover {
+    width: 10%;
+    background-image: url("/images/avatar2.png");
+}
+
+
 .aboutMe{
-    width: 60%;
+    width: 50%;
+    margin-right: 20%;
+    /* border-style: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.aboutMe h3{
+    vertical-align: middle;
+    padding: 5%;
+    /* border-style: solid; */
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px -15px black;
+    background-color: rgba(0,0,0, 0.01);
+}
+
 .section1{
     display: flex;
 }
@@ -105,7 +248,8 @@ nav ul{
     padding: 30px;
     text-align: center;
     border-radius: 30px;
-    margin: 5%;
+    margin: 10%;
+    margin-top: 3%;
 }
 
 .grid{
@@ -128,7 +272,7 @@ nav ul{
     padding: 10px;
     padding-top: 20px;
     height: 150px;
-    margin: 5px;
+    margin: 1%;
     background-color: white;
     box-shadow: 0px 0px 20px -15px black;
     color: black;
@@ -177,13 +321,14 @@ nav ul{
 }
 
 .description img{
-    opacity:20%;
+    opacity:50%;
     box-shadow: 0px 0px 20px -10px black;
 }
 
 .description img:hover{
-    opacity:40%;
+    opacity:30%;
     box-shadow: 0px 0px 20px -10px black;
+    filter: blur(4px);
 }
 
 .description h2{
@@ -194,9 +339,17 @@ nav ul{
 }
 
 
-#pyGame, #dataAnalysis, #sql, #WP{
+
+#pyGame, #dataAnalysis, #sql{
     margin: 0 auto;
     margin-top: 30px;
+    width: 30%;
+}
+
+#WP{
+    margin-top: 30px;
+    margin: 0 auto;
+    
     width: 30%;
 }
 
@@ -244,7 +397,6 @@ nav ul{
     color: rgb(0, 0, 0);
 }
 .timeline div{
-    /* border: 2px white solid; */
     padding-right: 2%;
     padding-left: 2%;
     padding-bottom: 3%;
@@ -257,7 +409,6 @@ nav ul{
 }
 .experience{
     width: 85%;
-    /* line-height: 0.3em; */
 }
 .experience ul{
     line-height: 1.5em;
@@ -286,6 +437,19 @@ nav ul{
 
 
 
+/* Projects Page */
+.coming-soon{
+    vertical-align: middle;
+    text-align: center;
+    margin: 20%;
+    margin-top: 15%;
+    padding: 5%;
+    /* border-style: solid; */
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px -15px black;
+    background-color: rgba(0,0,0, 0.01);
+}
 
 /* Footer */
 footer{
