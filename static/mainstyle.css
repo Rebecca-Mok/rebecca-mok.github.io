@@ -97,7 +97,7 @@ body{
 
 .box div:nth-child(13){
     top: 40%;
-    left: 90%%;
+    left: 90%;
     animation: animate 9s linear infinite;
 }
 
@@ -289,10 +289,24 @@ nav ul{
     height: 70px;
 }
 
+/* 
+.box div:nth-child(13){
+    top: 40%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+} */
+
 .col:hover{
     box-shadow: 0px 0px 25px -15px black;
-}
+    /* animation: animate 1s linear infinite; */
 
+ 
+}
+/* 
+@keyframes animate{
+    {up}
+    
+} */
 
 .showProjects {
     padding-left: 5%;
