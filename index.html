@@ -12,10 +12,14 @@
         <link rel= "stylesheet" type="text/css" href= "/static/mainstyle.css">
         <script src="/static/functions.js"></script>
 
+        <!-- For scroll -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
         <title>Rebecca Mok</title>
     </head>
 
     <body>
+        <!-- Background Animation -->
         <div class="box">
             <div></div>
             <div></div>
@@ -31,6 +35,7 @@
             <div></div>
             <div></div>
         </div>
+        
         <nav id = "navbar">
             <ul class="main-nav">
                 <li><strong><a href = "/index.html">Rebecca Mok</a></strong></li>
@@ -58,7 +63,7 @@
             <h1>Software Experience</h1>
             <p>Press on any icon to view the projects</p>
             <div class="grid">
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col" id=1><img src="/images/HTML.png"><h2>HTML</h2></div>
                     <div class="col" id=2><img src="/images/css.png"><h2>CSS</h2></div>
                     <div class="col" id=3><img src="/images/JavaScript.png"><h2>JavaScript</h2></div>
@@ -155,7 +160,7 @@
                         <button class="closeProjects">Close</button>
                     </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col" id=6><img src="/images/R.png" alt="R"><h2>R</h2></div>
                     <div class="col" id=7><img src="/images/Verilog.png" alt="Verilog"><h2>Verilog</h2></div>
                     <div class="col" id=8><img src="/images/SQL.png" alt="SQL"><h2>SQLite</h2></div>
@@ -231,7 +236,7 @@
 
                     </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col" id=11><img src="/images/MS.png" alt="MS"><h2>MS Office</h2></div>
                     <div class="col" id=12><img src="/images/autocad.png" alt="AutoCAD"><h2>AutoCAD</h2></div>
                     <div class="col" id=13><img src="/images/AdobeIllustrator.png" alt="Illustrator"><h2>Illustrator</h2></div>
@@ -306,6 +311,8 @@
                     
             </div>
         </div>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     </body>
 
     <footer>

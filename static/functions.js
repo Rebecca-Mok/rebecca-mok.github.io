@@ -1,4 +1,12 @@
+// Load content on scroll
+$(window).on('load', function() {
+  AOS.refresh();
+});
+
+  
 $(document).ready(function(){
+
+    AOS.init();
 
     $('.col').click(function(e){
         if (e.target.id != "")
@@ -7,6 +15,7 @@ $(document).ready(function(){
             idNum = parseInt(e.currentTarget.id)
       
         $('.showProjects').hide();
+
         $('.col').css({'background-color': 'white', 'box-shadow': '0px 0px 20px -15px black'});
         
         if (idNum == 1){
